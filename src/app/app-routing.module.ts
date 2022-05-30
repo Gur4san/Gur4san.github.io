@@ -1,0 +1,39 @@
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { BrowserModule } from "@angular/platform-browser";
+import { Routes, RouterModule } from "@angular/router";
+
+import { IndexComponent } from "./pages/index/index.component";
+import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
+import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
+import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { ServiceComponent } from "./pages/service/service/service.component";
+import { GuideComponent } from "./pages/guide/guide/guide.component";
+import { ContactComponent } from "./pages/contact/contact/contact.component";
+
+const routes: Routes = [
+  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "home", component: IndexComponent },
+  { path: "profile", component: ProfilepageComponent },
+  { path: "register", component: RegisterpageComponent },
+  { path: "landing", component: LandingpageComponent },
+  { path: "service" , component: ServiceComponent},
+  { path: "guide" , component: GuideComponent},
+  { path: "contact" , component: ContactComponent}
+
+];
+
+@NgModule({
+  imports: [
+    CommonModule,
+    BrowserModule,
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      scrollPositionRestoration: 'top'
+      
+    })
+  ],
+  
+  exports: []
+})
+export class AppRoutingModule {}

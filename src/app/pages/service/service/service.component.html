@@ -1,0 +1,366 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        placement="bottom"
+        [routerLink]="['/home']"
+        target="_self"
+        routerLinkActive="active">
+
+        <img class="logo" src="../../../assets/img/logo_long_blue.png" />
+        
+      
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> Tappay </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item p-0"
+        [routerLinkActive]="'active'">
+          <a
+            class="nav-link"
+            placement="bottom"
+            [routerLink]="['/home']"
+          >
+            Нүүр
+          </a>
+        </li>
+        <li class="nav-item p-0"
+        [routerLinkActive]="'active'">
+          <a
+            class="nav-link active"
+            placement="bottom"
+            [routerLink]="['/service']"
+            
+          >
+            Үйлчилгээ
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            placement="bottom"
+            [routerLink]="'/guide'"
+          >
+            Заавар
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            placement="bottom"
+            [routerLink]="'/contact'"
+          >
+            Холбоо барих
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper">
+  <div class="page-header">
+    <img class="path" src="assets/img/blob.png" />
+
+    <img class="path2" src="assets/img/path2.png" />
+
+    <img class="shapes triangle" src="assets/img/triunghiuri.png" />
+
+    <img class="shapes wave" src="assets/img/waves.png" />
+
+    <img class="shapes squares" src="assets/img/patrat.png" />
+
+    <img class="shapes circle" src="assets/img/cercuri.png" />
+
+    <div class="content-center">
+      <div
+        class="row row-grid justify-content-between align-items-center text-left"
+      >
+        <div class="col-lg-6 col-md-6">
+          <h1 class="text-dark">
+            We give you <br />
+
+            <span class="text-dark"> KIOSK lending </span>
+          </h1>
+          <p class="text-dark mb-3">
+            There is a lot of things you can do with kiosk. But we give you
+            whole new one. Lend money from KIOSK right away! Isnt it wonderfull?
+            no contract no waiting no banking.
+          </p>
+          <div class="btn-wrapper mb-3">
+            <p class="category text-success d-inline mr-1" class="text-dark">
+              Learn More
+            </p>
+            <a
+              class="btn btn-success btn-link btn-sm"
+              href="javascript:void(0)"
+            >
+              <i class="tim-icons icon-minimal-right"> </i>
+            </a>
+          </div>
+          <div class="btn-wrapper">
+            <div class="button-container">
+              <button
+                class="btn btn-icon btn-simple btn-round btn-neutral mr-1"
+                href="javascript:void(0)"
+              >
+                <i class="fab fa-twitter"> </i>
+              </button>
+              <button
+                class="btn btn-icon btn-simple btn-round btn-neutral mr-1"
+                href="javascript:void(0)"
+              >
+                <i class="fab fa-dribbble"> </i>
+              </button>
+              <button
+                class="btn btn-icon btn-simple btn-round btn-neutral"
+                href="javascript:void(0)"
+              >
+                <i class="fab fa-facebook"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <img
+            alt="Circle image"
+            class="img-fluid"
+            src="assets/img/logo_blue_bg_transparent.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-primary border-2 border-top border-primary" />
+
+  <section class="section section-lg section-safe">
+    <div class="section section-typo">
+      <div class="container">
+        <hr class="line-success" class="bg-primary" />
+
+        <h3 class="text-dark">Үйлчилгээ</h3>
+        <div class="text-dark col-md-12 col-lg-12">
+          Тар Рау зээлийн платформ нь Гэрэгэ Киоск ХХК-тай хамтран ажилладаг ба
+          Гэрэгэ Киоск ХХК нь Монгол улсын 18 аймаг, 9 дүүрэгт 180 гаруй
+          киоскоор төрийн болон хувийн 550 гаруй үйлчилгээний төлбөр төлөлт
+          хийгддэг бөгөөд өдөрт дунджаар 8000 орчим хүн үйлчлүүлдэг. Гэрэгэ -
+          Киоскоор үйлчилгээ авч байгаа хэрэглэгч нь тус киоск-д байрлах 550
+          үйлчилгээний төлбөрийг зээлээр төлөх боломжийг Tap Pay зээлийн
+          платформ нь бий болгож байна. Та зээлийн хэмжээ, зээлийн хүү, зээлийн
+          хугацаа болон зээлийн эргэн төлөх график зэргийг харгалзаж үзэн, өөрт
+          тохирох банк бус санхүүгийн байгууллагыг сонгож зээлийн үйлчилгээг тэр
+          дороо авах боломжтой.
+
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-lg section-safe">
+      <img class="path" src="assets/img/path5.png" />
+
+      <div class="container">
+        <div class="row row-grid justify-content-between">
+          <div class="col-md-5">
+            <img class="img-fluid floating" src="assets/img/chester-wade.jpg" />
+
+            <div class="card card-stats bg-danger">
+              <div class="card-body">
+                <div class="justify-content-center">
+                  <div class="numbers">
+                    <p class="card-title">100%</p>
+                    <p class="card-category text-white">Safe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-stats bg-info">
+              <div class="card-body">
+                <div class="justify-content-center">
+                  <div class="numbers">
+                    <p class="card-title">100+</p>
+                    <p class="card-category text-white">KIOSK placed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-stats bg-default">
+              <div class="card-body">
+                <div class="justify-content-center">
+                  <div class="numbers">
+                    <p class="card-title">10000+</p>
+                    <p class="card-category text-white">Customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="px-md-5">
+              <hr class="line-success" />
+
+              <h3 class="text-dark">Awesome features</h3>
+              <p class="text-dark">
+                The design system comes with three pre-built pages to help you
+                get started faster. You can change the text and images and
+                you're good to go.
+              </p>
+              <ul class="list-unstyled mt-5">
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-success mb-2">
+                      <i class="tim-icons icon-vector"> </i>
+                    </div>
+                    <div class="ml-3">
+                      <h6 class="text-dark">Carefully crafted components</h6>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-success mb-2">
+                      <i class="tim-icons icon-tap-02"> </i>
+                    </div>
+                    <div class="ml-3">
+                      <h6 class="text-dark">Amazing page examples</h6>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-success mb-2">
+                      <i class="tim-icons icon-single-02"> </i>
+                    </div>
+                    <div class="ml-3"><h6>Super friendly support team</h6></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section section-typo">
+      <div class="container">
+        <p class="text-center col-lg-12" class="text-dark">
+          "I will be the leader of a company that ends up being worth billions
+          of dollars, because I got the answers. I understand culture. I am the
+          nucleus. I think thatâs a responsibility that I have, to push
+          possibilities, to show people, this is the level that things could be
+          at." <br />
+
+          <br />
+          <small> - Noaa </small>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><h1 class="title">Tappay</h1></div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Нүүр </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/service']"> Үйлчилгээ </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/guide']"> Заавар </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/contact']">
+                Холбоо барих
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Бидний тухай </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blog </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Gerege </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Үйлчилгээний нөхцөл </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Follow us:</h3>
+          <div class="btn-wrapper profile">
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="#"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="#"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple"
+              href="#"
+              target="_blank"
+            >
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
